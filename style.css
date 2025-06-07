@@ -1,0 +1,170 @@
+/* 设置整个页面的通用样式 */
+body {
+    /* 使用 Arial 字体，如果 Arial 不可用，则使用系统默认的无衬线字体 */
+    font-family: 'Arial', sans-serif;
+    /* 去除页面的默认外边距 */
+    margin: 0;
+    /* 在页面内容周围添加 20px 的内边距 */
+    padding: 20px;
+    /* 设置页面的背景颜色为浅灰色 */
+    background-color: #f5f7fa;
+}
+
+/* 定义主要内容容器的样式 */
+.container {
+    /* 设置容器的最大宽度为 1200px，确保在大屏幕上不会太宽 */
+    max-width: 1200px;
+    /* 将容器水平居中显示 */
+    margin: 0 auto;
+    /* 设置容器的背景颜色为白色 */
+    background: white;
+    /* 在容器内部添加 20px 的内边距 */
+    padding: 20px;
+    /* 为容器添加 8px 的圆角 */
+    border-radius: 8px;
+    /* 为容器添加一个轻微的阴影效果，增强层次感 */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 设置一级标题的样式 */
+h1 {
+    /* 设置标题的颜色为深灰色 */
+    color: #2c3e50;
+    /* 将标题文本居中显示 */
+    text-align: center;
+    /* 在标题下方添加 30px 的外边距 */
+    margin-bottom: 30px;
+}
+
+/* 定义搜索框容器的样式 */
+.search-box {
+    /* 使用 Flexbox 布局，将搜索框内的元素水平居中显示 */
+    display: flex;
+    justify-content: center;
+    /* 在搜索框下方添加 20px 的外边距 */
+    margin-bottom: 20px;
+}
+
+/* 设置城市输入框的样式 */
+#city-input {
+    /* 在输入框内部添加 10px 的上下内边距和 15px 的左右内边距 */
+    padding: 10px 15px;
+    /* 设置输入框的宽度为 300px */
+    width: 300px;
+    /* 为输入框添加一个浅灰色的边框 */
+    border: 1px solid #ddd;
+    /* 设置输入框左上角和左下角的圆角为 4px */
+    border-radius: 4px 0 0 4px;
+    /* 设置输入框内文本的字体大小为 16px */
+    font-size: 16px;
+}
+
+/* 设置搜索按钮的样式 */
+#search-btn {
+    /* 在按钮内部添加 10px 的上下内边距和 20px 的左右内边距 */
+    padding: 10px 20px;
+    /* 设置按钮的背景颜色为蓝色 */
+    background-color: #3498db;
+    /* 设置按钮文本的颜色为白色 */
+    color: white;
+    /* 去除按钮的边框 */
+    border: none;
+    /* 设置按钮右上角和右下角的圆角为 4px */
+    border-radius: 0 4px 4px 0;
+    /* 将鼠标悬停在按钮上时的指针样式设置为手型 */
+    cursor: pointer;
+    /* 设置按钮内文本的字体大小为 16px */
+    font-size: 16px;
+}
+
+/* 设置搜索按钮在鼠标悬停时的样式 */
+#search-btn:hover {
+    /* 将按钮的背景颜色变为更深的蓝色 */
+    background-color: #2980b9;
+}
+
+/* 定义图表容器的样式 */
+.charts-container {
+    /* 使用 Flexbox 布局，允许图表在一行排不下时换行显示 */
+    display: flex;
+    flex-wrap: wrap;
+    /* 在图表之间添加 20px 的间距 */
+    gap: 20px;
+    /* 在图表容器上下添加 30px 的外边距 */
+    margin: 30px 0;
+}
+
+/* 定义单个图表包装器的样式 */
+.chart-wrapper {
+    /* 让每个图表包装器平均分配容器的宽度 */
+    flex: 1;
+    /* 设置图表包装器的最小宽度为 300px */
+    min-width: 300px;
+    /* 设置图表包装器的背景颜色为白色 */
+    background: white;
+    /* 在图表包装器内部添加 15px 的内边距 */
+    padding: 15px;
+    /* 为图表包装器添加 8px 的圆角 */
+    border-radius: 8px;
+    /* 为图表包装器添加一个轻微的阴影效果，增强层次感 */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 定义天气表格容器的样式 */
+.weather-table {
+    /* 在天气表格上方添加 40px 的外边距 */
+    margin-top: 40px;
+}
+
+/* 定义表格容器的样式，处理表格在小屏幕上的横向滚动 */
+.table-container {
+    /* 当表格宽度超出容器时，允许水平滚动 */
+    overflow-x: auto;
+}
+
+/* 设置表格的通用样式 */
+table {
+    /* 让表格的边框合并为一条线 */
+    border-collapse: collapse;
+    /* 在表格上方添加 20px 的外边距 */
+    margin-top: 20px;
+    /* 设置表格的宽度为 100%，填充整个容器 */
+    width: 100%;
+}
+
+/* 设置表格表头和单元格的通用样式 */
+th, td {
+    /* 在表头和单元格内部添加 12px 的上下内边距和 15px 的左右内边距 */
+    padding: 12px 15px;
+    /* 将表头和单元格内的文本左对齐 */
+    text-align: left;
+    /* 在表头和单元格下方添加一条浅灰色的边框 */
+    border-bottom: 1px solid #ddd;
+}
+
+/* 设置表格表头的样式 */
+th {
+    /* 设置表头的背景颜色为蓝色 */
+    background-color: #3498db;
+    /* 设置表头文本的颜色为白色 */
+    color: white;
+}
+
+/* 设置表格行在鼠标悬停时的样式 */
+tr:hover {
+    /* 将鼠标悬停的表格行的背景颜色变为浅灰色 */
+    background-color: #f5f5f5;
+}
+
+/* 定义在小屏幕（最大宽度为 768px）下的样式调整 */
+@media (max-width: 768px) {
+    /* 在小屏幕下，将图表容器内的图表改为垂直排列 */
+    .charts-container {
+        flex-direction: column;
+    }
+
+    /* 在小屏幕下，将城市输入框的宽度缩小为 200px */
+    #city-input {
+        width: 200px;
+    }
+}
